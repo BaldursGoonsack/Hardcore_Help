@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="hb45dd793g0674g4592g9627g571ebf59ed61" version="1">Assist an ally in need. Remove &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="ENSNARED"&gt;Ensnared&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="WEB"&gt;Enwebbed&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, and &lt;LSTag Type="Status" Tooltip="SLEEPING"&gt;Sleeping&lt;/LSTag&gt; from a friendly target.
+
+A successful &lt;LSTag Tooltip="Medicine"&gt;Medicine&lt;/LSTag&gt; &lt;LSTag Tooltip="SkillCheck"&gt;Skill Check&lt;/LSTag&gt; will heal a &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt; friendly target for [1], while a failed check will only stabilise them.</content>
+	<content contentuid="h9b13b016g36e4g490ag9eceg714e8331e872" version="1">You automatically succeed &lt;LSTag Tooltip="Medicine"&gt;Medicine&lt;/LSTag&gt; &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt; while outside of combat.</content>
+</contentList>
