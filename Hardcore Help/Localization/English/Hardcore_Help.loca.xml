@@ -3,5 +3,12 @@
 	<content contentuid="hb45dd793g0674g4592g9627g571ebf59ed61" version="1">Assist an ally in need. Remove &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="ENSNARED"&gt;Ensnared&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="WEB"&gt;Enwebbed&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, and &lt;LSTag Type="Status" Tooltip="SLEEPING"&gt;Sleeping&lt;/LSTag&gt; from a friendly target.
 
 A successful &lt;LSTag Tooltip="Medicine"&gt;Medicine&lt;/LSTag&gt; &lt;LSTag Tooltip="SkillCheck"&gt;Skill Check&lt;/LSTag&gt; will heal a &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt; friendly target for [1], while a failed check will only stabilise them.</content>
+
 	<content contentuid="h9b13b016g36e4g490ag9eceg714e8331e872" version="1">You automatically succeed &lt;LSTag Tooltip="Medicine"&gt;Medicine&lt;/LSTag&gt; &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt; while outside of combat.</content>
+
+	<content contentuid="h9f8349cagb885g428cg8d39g9554f9608b67" version="1">If you reach 0 hit points, you fall Unconscious and must make Death &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. On 3 successes, you stop bleeding out and become Stable. On 3 failures, you die.
+
+If you regain any hit points, the condition is removed. If an ally successfully &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helps&lt;/LSTag&gt; you, you regain [1].
+
+When the condition is removed you regain your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; and a &lt;LSTag Tooltip="BonusAction"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 </contentList>

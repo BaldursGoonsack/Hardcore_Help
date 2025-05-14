@@ -16,3 +16,21 @@ data "TargetConditions" "Character() and not Self() and (not Enemy() or Player()
 data "SpellRoll" "not Combat() or SkillCheck(Skill.Medicine, 10)"
 data "SpellSuccess" "IF(IsDowned()):RegainHitPoints(1,Guaranteed)"
 data "SpellFail" "IF(IsDowned()):Stabilize()"
+
+// ==================================== Give chances of getting your action point back after being picked up from a downed state, also restore Reactions ====================================
+
+new entry "DOWNED"
+type "StatusData"
+data "StatusType" "DOWNED"
+using "DOWNED"
+// If you reach 0 hit points, you fall Unconscious and must make Death Saving Throws. On 3 successes, you stop bleeding out and become Stable. On 3 failures, you die.
+// If you regain any hit points, the condition is removed. If an ally <LSTag Type="Spell" Tooltip="Target_Help">Helps</LSTag> you, you regain 1 hit point.
+// data "Description" "h82d41284g4437g4202g859cgb7470b39bc22;3"
+// If you reach 0 hit points, you fall Unconscious and must make Death &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. On 3 successes, you stop bleeding out and become Stable. On 3 failures, you die.
+// If you regain any hit points, the condition is removed. If an ally successfully &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helps&lt;/LSTag&gt; you, you regain [1].
+// When the condition is removed you regain your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;, a &lt;LSTag Tooltip="BonusAction"&gt;Bonus Action&lt;/LSTag&gt; and a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. Additionally, you can regain an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; if you succeed a &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.
+data "Description" "h9f8349cagb885g428cg8d39g9554f9608b67;1"
+// data "DescriptionParams" "Distance(1.5)"
+data "DescriptionParams" "RegainHitPoints(1)"
+// data "OnRemoveFunctors" "ResetCombatTurn();RestoreResource(Movement, 100%, 0);RestoreResource(BonusActionPoint, 100%, 0);"
+data "OnRemoveFunctors" "ResetCombatTurn();RestoreResource(Movement, 100%, 0);RestoreResource(BonusActionPoint, 1, 0)"
